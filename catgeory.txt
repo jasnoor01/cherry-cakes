@@ -1,0 +1,30 @@
+<?php
+
+$firstname= $_POST['fname1'];
+$lastname= $_POST['lname1'];
+$dob= $_POST['dob1'];
+$contact=$_POST['cont1'];
+$username1=$_POST['uname1'];
+$email1= $_POST['email1'];
+$password1= $_POST['pswd1'];
+$address=$_POST['address'];
+$city=$_POST['city'];
+$state= $_POST['state'];
+$pincode=$_POST['pincode'];
+$country=$_POST['country'];
+
+include("connect.php");
+
+$sql = "INSERT INTO registration_form (first_name,last_name,date_of_birth,contact,user_name,email,password,address,city,state,pincode,country)
+VALUES ('$firstname','$lastname','$dob','$contact','$username1','$email1','$password1','$address','$city','$state','$pincode','$country')";
+
+if (mysqli_query($conn, $sql)) {
+  echo "New record created successfully";
+
+  header("Location:registration_form.php");
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+
+?>

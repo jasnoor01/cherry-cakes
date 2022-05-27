@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Cherry Cakes</title>
+    
+	
+	
+	
+	<style>
+* {
+  box-sizing: border-box;
+}	
+.pic,.form{
+float:left;
+
+}
+
+
+.form{
+position:relative;
+top:65px;
+text-align:left;
+
+
+}	
+
+#welcome{
+color:#fa416a;
+}
+.in{
+width:300px;
+    height: 68px;
+    border: none;
+    padding: 0 30px;
+        background-color: rgba(57, 57, 57, 0.07);
+    border-radius:10px;
+}
+.loginbut
+{
+ background-color: rgba(57, 57, 57, 0.07);
+position:relative;
+right:-100px;
+border-radius:20px;
+border:0;
+font-weight:bold;
+padding:25px;
+
+text-align:center;
+}
+.loginbut:hover{
+color:white;
+cursor:pointer;
+background-color: #fa416a;
+
+}
+.parent{
+border-radius:0 50px 0 50px;
+height:450px;
+background-color:whitesmoke;
+position:relative;
+top:-50px;
+}
+
+	
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+	</style>
+    </head>
+<body>
+
+<div class="parent col-6">
+<div class=" pic col-5"><img src="pics/loginimg.jpg" width="300px" height="450px" style="border-radius: 0 0 0 50px"> </div>
+
+<div class="form col-7"> 
+<center><h1  id="welcome"> Welcome To Cherry Cakes!</h1>
+<form action="login_page_action.php" method="post">
+
+  <input class="in" type="text" id="uname" name="uname" placeholder="Username"><br><br>
+  
+  <input class="in" type="text" id="psd" name="psd"  placeholder="Password"><br><br>
+  <input class="loginbut" type="submit" value="LOG-IN">
+</form> 
+</center>
+</div>
+</div>
+</body>
+</html>
